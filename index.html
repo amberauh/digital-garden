@@ -20,7 +20,7 @@
       text-align: center;
       margin: 10px;
       font-family: "BM Hanna", serif;
-      font-size: 60;
+      font-size: 10vw;
       font-weight: 100;
       letter-spacing: .3rem;
       color: hsl(120, 18%, 25%);
@@ -28,33 +28,84 @@
     
     .descr {
       text-align: center;
+      margin-top: 3vw;
       font-family: "Avenir Next",sans-serif;
-      font-size: 15;
+      font-size: 2.5vw;
       font-weight: 300;
       font-style: italic;
       color: hsl(120, 18%, 25%);
       background-color: pink;
     }
     
+    .fmsandwich {
+      position: relative;
+    }
+    
     .fmsandwich-img {
-      margin: 50px;
+      width: 30vw;
+      height: auto;
       border-radius: 3%;
       border: 2px solid green;
     }
     
-    .fmsandwich {
+    .fmsandwich-text{
+      position: absolute;
+      margin-top: 3vw;
+      color: hsl(120, 18%, 25%);
+      white-space: pre-wrap;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .fmsandwich-text::before {
+      content: "Hyde Park Farmer's Market";
+      font-family: "BM Hanna", sans-serif;
+      font-size: 2.5vw;
+      font-weight: 300;
+      margin-bottom: 1.5vw;
+    }
+    
+    .fmsandwich-text::after {
+      content: "23 September 2023";
+      font-size: 2vw;
+      font-family: "Avenir Next", sans-serif;
+      font-style: italic;
+
       
     }
+/*     .fmsandwich-text {
+      position: absolute;
+      font-family: "Avenir Next", sans-serif;
+      font-size: 2.3vw;
+      font-weight: 300;
+      color: hsl(120, 18%, 25%);
+      
+    } */
+    
+    
+    
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 250px); /* Adjust 250px to your preferred column width */
+      gap: 16px;
+      padding: 5vw;
+}
     
   </style>
 	<body>
     <h1> Foodie Diary
     </h1>
     <div class="descr">a documentation of some excellent eats, across the world. </div>
-    <div class="fmsandwich">
-      <img class="fmsandwich-img" src="farmers market sandwich.jpg" alt="description of image" width="200" height=auto> 
-      
+    <div class="grid-container">
+      <div class="fmsandwich">
+        <img class="fmsandwich-img" src="farmers market sandwich.jpg" alt="description of image">
+        <div class="fmsandwich-text">
+        </div>
+        
+      </div>
+     
     </div>
+    
     
 		
 	</body>
