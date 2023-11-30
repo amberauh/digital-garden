@@ -67,11 +67,13 @@
     }
     
     .fmsandwich-text::after {
-      content: "23 September 2023";
+/*       content: "23 September 2023"; */
+      content: attr(extra);
       font-size: 2vw;
       font-family: "Andale Mono", sans-serif;
       font-style: italic;  
       white-space: pre-wrap;
+      line-height: 5vw;
     }
     
     .additional {
@@ -95,7 +97,7 @@
     <div class="grid-container">
       <div class="fmsandwich">
         <img class="fmsandwich-img" src="farmers market sandwich.jpg" alt="description of image">
-        <div class="fmsandwich-text">
+        <div class="fmsandwich-text" extra="23 September 2023&#10;Smoked Salmon">
         </div>      
       </div>
     </div>
