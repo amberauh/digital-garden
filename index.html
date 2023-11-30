@@ -29,7 +29,7 @@
     .descr {
       text-align: center;
       margin-top: 3vw;
-      font-family: "Avenir Next",sans-serif;
+      font-family: "Andale Mono",sans-serif;
       font-size: 2.5vw;
       font-weight: 300;
       font-style: italic;
@@ -50,6 +50,7 @@
     
     .fmsandwich-text{
       position: absolute;
+      width: 35vw;
       margin-top: 3vw;
       color: hsl(120, 18%, 25%);
       white-space: pre-wrap;
@@ -58,7 +59,7 @@
     }
   
     .fmsandwich-text::before {
-      content: "Hyde Park Farmer's Market";
+      content: "Hyde Park Farmer's Market Chicago USA";
       font-family: "BM Hanna", sans-serif;
       font-size: 2.5vw;
       font-weight: 300;
@@ -68,25 +69,20 @@
     .fmsandwich-text::after {
       content: "23 September 2023";
       font-size: 2vw;
-      font-family: "Avenir Next", sans-serif;
-      font-style: italic;
-
-      
+      font-family: "Andale Mono", sans-serif;
+      font-style: italic;  
+      white-space: pre-wrap;
     }
-/*     .fmsandwich-text {
-      position: absolute;
-      font-family: "Avenir Next", sans-serif;
-      font-size: 2.3vw;
-      font-weight: 300;
-      color: hsl(120, 18%, 25%);
-      
-    } */
     
-    
+    .additional {
+      font-size: 2vw;
+      font-family: "Andale Mono", sans-serif;
+      font-style: italic;
+    }
     
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(auto-fill, 250px); /* Adjust 250px to your preferred column width */
+      grid-template-columns: repeat(auto-fill, 250px);
       gap: 16px;
       padding: 5vw;
 }
@@ -100,13 +96,9 @@
       <div class="fmsandwich">
         <img class="fmsandwich-img" src="farmers market sandwich.jpg" alt="description of image">
         <div class="fmsandwich-text">
-        </div>
-        
+        </div>      
       </div>
-     
     </div>
     
-    
-		
 	</body>
 </html>
