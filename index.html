@@ -20,7 +20,7 @@
       text-align: center;
       margin: 10px;
       font-family: "BM Hanna", serif;
-      font-size: 10vw;
+      font-size: 15vw;
       font-weight: 100;
       letter-spacing: .3rem;
       color: hsl(120, 18%, 25%);
@@ -28,7 +28,7 @@
     
     .descr {
       text-align: center;
-      margin-top: 3vw;
+      margin-top: 8vw;
       font-family: "Andale Mono",sans-serif;
       font-size: 2.5vw;
       font-weight: 300;
@@ -40,14 +40,9 @@
     .meta {
       position: relative;
       display: block;
+      flex-direction: column;
+      margin-bottom: 20vw;
       
-    }
-    
-    .fmsandwich-img {
-      width: 30vw;
-      height: auto;
-      border-radius: 3%;
-      border: 2px solid green;
     }
     
     .location {
@@ -63,36 +58,49 @@
       font-weight: 300;
     }
     
-    .date {
+    .date1 {
       position: absolute;
       width: 100%;
       bottom: -10.5vw;
+      display: block;
       white-space: pre-wrap;
-      display: flex;
       flex-direction: column;
       font-family: "Avenir Next", sans-serif;
       font-size: 2vw;
       font-weight: 200;
     }
     
-     .caption {
+    .date2 {
+      position: absolute;
+      width: 100%;
+      bottom: -9vw;
+      display: block;
+      white-space: pre-wrap;
+      flex-direction: column;
+      font-family: "Avenir Next", sans-serif;
+      font-size: 2vw;
+      font-weight: 200;
+    }
+    
+    .caption {
       position: absolute;
       bottom: -18vw;
-      width: 34vw;
+      width: 32vw;
       font-size: 2vw;
       font-family: "Andale Mono", sans-serif;
       font-style: italic; 
       white-space: pre-wrap;
-      display: flex;
+      display: block;
       flex-direction: column;
       color: hsl(120, 18%, 25%);
+      
     } 
     
     .grid-container {
       display: flex;
       flex-wrap: wrap;
       gap: 5vw;
-      padding: 5vw;
+      padding: 8vw;
 }
     .japan-house {
       width: 31vw;
@@ -101,12 +109,18 @@
       border: 2px solid green;
     }
     
+    .fmsandwich-img,
+    .spartina,
+    .tzuco,
+    .obon,
     .copenhagen {
       width: 30vw;
       height: auto;
       border-radius: 3%;
       border: 2px solid green;
     }
+    
+
     
   </style>
 	<body>
@@ -117,23 +131,47 @@
       <div class="meta">
         <img class="fmsandwich-img" src="farmers market sandwich.jpg" alt="description of image">
         <div class="location">Hyde Park Farmers' Market, Chicago USA</div>
-        <div class="date">23 September 2023</div>
+        <div class="date1">23 September 2023</div>
         <div class="caption">smoked salmon, tomato, mozzarella, capers on sourdough bread.</div> 
       </div>
       
       <div class="meta">
-        <img class="japan-house"src="IMG_1433.JPG" alt="description of image">
+        <img class="japan-house" src="IMG_1433.JPG" alt="description of image">
         <div class="location">Akira at Japan House,<br>London UK</div>
-        <div class="date">22 August 2023</div>
+        <div class="date1">22 August 2023</div>
         <div class="caption">assorted sushi and sashmi bento box. very yummy and very pretty.</div>
       </div>
       
       <div class="meta">
-        <img class="copenhagen"src="copenhagen-porridge.JPG" alt="description of image">
-        <div class="location"></div>
-        <div class="date"></div>
-        <div class="caption"></div>
+        <img class="copenhagen" src="copenhagen-porridge.JPG" alt="description of image">
+        <div class="location">Grød, Copenhagen Denmark</div>
+        <div class="date2">8 September 2023</div>
+        <div class="caption">everything made out of danish porridge with a modern twist. </div>
       </div>
+      
+       <div class="meta">
+        <img class="spartina" src="spartina.JPG" alt="description of image">
+        <div class="location">Spartina, Los Angeles USA</div>
+        <div class="date2">17 March 2023</div>
+        <div class="caption">black and white garlic,calabrian chilies, spaghettini, percorino</div>
+      </div>
+      
+      <div class="meta">
+        <img class="tzuco" src="tzuco brunch.JPG" alt="description of image">
+        <div class="location">Tzuco, Chicago USA</div>
+        <div class="date2">17 March 2023</div>
+        <div class="caption">Belgian waffle, fried chicken, braised leeks, and maple syrup.</div>
+      </div>
+      
+      <div class="meta">
+        <img class="obon" src="obon sushi.JPG" alt="description of image">
+        <div class="location">Obon Sushi, Surrey UK</div>
+        <div class="date2">17 March 2023</div>
+        <div class="caption">the best white fish sashimi ever (hamachi usuzukuri), agedashi tofu</div>
+      </div>
+      
+      
+      
     </div>
     
 	</body>
