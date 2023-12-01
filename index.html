@@ -37,8 +37,10 @@
       background-color: pink;
     }
     
-    .fmsandwich {
+    .meta {
       position: relative;
+      display: block;
+      
     }
     
     .fmsandwich-img {
@@ -48,46 +50,63 @@
       border: 2px solid green;
     }
     
-    .fmsandwich-text{
+    .location {
       position: absolute;
       width: 35vw;
-      margin-top: 3vw;
       color: hsl(120, 18%, 25%);
       white-space: pre-wrap;
+      margin-top: 2vw;
       display: flex;
       flex-direction: column;
-    }
-  
-    .fmsandwich-text::before {
-      content: "Hyde Park Farmer's Market Chicago USA";
       font-family: "BM Hanna", sans-serif;
       font-size: 2.5vw;
       font-weight: 300;
-      margin-bottom: 1.5vw;
     }
     
-    .fmsandwich-text::after {
-/*       content: "23 September 2023"; */
-      content: attr(extra);
-      font-size: 2vw;
-      font-family: "Andale Mono", sans-serif;
-      font-style: italic;  
+    .date {
+      position: absolute;
+      width: 100%;
+      bottom: -10.5vw;
       white-space: pre-wrap;
-      line-height: 5vw;
+      display: flex;
+      flex-direction: column;
+      font-family: "Avenir Next", sans-serif;
+      font-size: 2vw;
+      font-weight: 200;
     }
     
-    .additional {
+     .caption {
+      position: absolute;
+      bottom: -18vw;
+      width: 34vw;
       font-size: 2vw;
       font-family: "Andale Mono", sans-serif;
-      font-style: italic;
-    }
+      font-style: italic; 
+      white-space: pre-wrap;
+      display: flex;
+      flex-direction: column;
+      color: hsl(120, 18%, 25%);
+    } 
     
     .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, 250px);
-      gap: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5vw;
       padding: 5vw;
 }
+    .japan-house {
+      width: 31vw;
+      height: auto;
+      border-radius: 3%;
+      border: 2px solid green;
+    }
+    
+    .copenhagen {
+      width: 30vw;
+      height: auto;
+      border-radius: 3%;
+      border: 2px solid green;
+    }
     
   </style>
 	<body>
@@ -95,10 +114,25 @@
     </h1>
     <div class="descr">a documentation of some excellent eats, across the world. </div>
     <div class="grid-container">
-      <div class="fmsandwich">
+      <div class="meta">
         <img class="fmsandwich-img" src="farmers market sandwich.jpg" alt="description of image">
-        <div class="fmsandwich-text" extra="23 September 2023&#10;Smoked Salmon">
-        </div>      
+        <div class="location">Hyde Park Farmers' Market, Chicago USA</div>
+        <div class="date">23 September 2023</div>
+        <div class="caption">smoked salmon, tomato, mozzarella, capers on sourdough bread.</div> 
+      </div>
+      
+      <div class="meta">
+        <img class="japan-house"src="IMG_1433.JPG" alt="description of image">
+        <div class="location">Akira at Japan House,<br>London UK</div>
+        <div class="date">22 August 2023</div>
+        <div class="caption">assorted sushi and sashmi bento box. very yummy and very pretty.</div>
+      </div>
+      
+      <div class="meta">
+        <img class="copenhagen"src="copenhagen-porridge.JPG" alt="description of image">
+        <div class="location"></div>
+        <div class="date"></div>
+        <div class="caption"></div>
       </div>
     </div>
     
